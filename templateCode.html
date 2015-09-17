@@ -1,0 +1,7 @@
+{{/* layouts/partials/templateCode.html */}}
+
+{{ $filePath := . }}
+<button onclick='toggleShow("{{ $filePath }}")'>Template</button>
+<div class="source-code" id="{{ $filePath }}" style="display:none;">
+  <script src="http://gist-it.appspot.com/github/m-hiyama/hugo-sample-movie-blog/blob/master/{{ $filePath }}"></script>
+</div>
